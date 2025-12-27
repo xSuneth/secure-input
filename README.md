@@ -1,5 +1,8 @@
 # 🔐 Secure Input
 
+[![npm version](https://badge.fury.io/js/@secure-input%2Fcore.svg)](https://www.npmjs.com/package/@secure-input/core)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 **WASM-powered input obfuscation library for preventing client-side scraping**
 
 A lightweight, framework-agnostic library that uses WebAssembly encryption and Web Workers to protect sensitive input data (like coupon codes) from browser extensions and client-side scrapers.
@@ -10,9 +13,9 @@ This library provides **obfuscation**, not absolute security. It raises the bar 
 
 ## 📦 Packages
 
-- `@secure-input/core` - Framework-agnostic core library (~15KB gzipped)
-- `@secure-input/react` - React hooks and components (~5KB gzipped)
-- `@secure-input/wasm` - WASM encryption module (~10KB gzipped)
+- [`@secure-input/core`](https://www.npmjs.com/package/@secure-input/core) - Framework-agnostic core library (~15KB gzipped)
+- [`@secure-input/react`](https://www.npmjs.com/package/@secure-input/react) - React hooks and components (~5KB gzipped)
+- [`@secure-input/wasm`](https://www.npmjs.com/package/@secure-input/wasm) - WASM encryption module (~10KB gzipped)
 
 **Total size: ~30KB gzipped**
 
