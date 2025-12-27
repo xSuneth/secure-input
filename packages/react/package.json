@@ -53,14 +53,5 @@
     "vite": "^5.0.11",
     "vite-plugin-dts": "^3.7.0",
     "vitest": "^1.1.3"
-  },
-  "keywords": [
-    "react",
-    "hooks",
-    "security",
-    "input",
-    "encryption"
-  ],
-  "author": "",
-  "license": "MIT"
+  }
 }

@@ -45,14 +45,5 @@
     "vite": "^5.0.11",
     "vite-plugin-dts": "^3.7.0",
     "vitest": "^1.1.3"
-  },
-  "keywords": [
-    "security",
-    "input",
-    "obfuscation",
-    "wasm",
-    "encryption"
-  ],
-  "author": "",
-  "license": "MIT"
+  }
 }
