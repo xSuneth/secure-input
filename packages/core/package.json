@@ -1,6 +1,6 @@
 {
   "name": "@secure-input/core",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Framework-agnostic input obfuscation library with WASM encryption",
   "type": "module",
   "main": "./dist/index.js",
