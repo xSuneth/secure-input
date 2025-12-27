@@ -1,0 +1,125 @@
+.app {
+  width: 100%;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.card {
+  background: #f9fafb;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.card h2 {
+  color: #374151;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.result-card {
+  background: #d1fae5;
+  border: 2px solid #10b981;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.result-card.loading {
+  background: #dbeafe;
+  border-color: #3b82f6;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.result-card h3 {
+  color: #065f46;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.result-card .info {
+  color: #047857;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.encrypted-value {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #10b981;
+}
+
+.encrypted-value strong {
+  display: block;
+  color: #065f46;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.encrypted-value code {
+  display: block;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  color: #374151;
+  word-break: break-all;
+  line-height: 1.6;
+}
+
+.info-card {
+  background: #ede9fe;
+  border: 2px solid #8b5cf6;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.info-card h3 {
+  color: #5b21b6;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.info-card ul {
+  list-style: none;
+  color: #6b21a8;
+}
+
+.info-card li {
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #bfdbfe;
+  border-top-color: #3b82f6;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

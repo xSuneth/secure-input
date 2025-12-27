@@ -1,0 +1,44 @@
+{
+  "name": "@secure-input/wasm",
+  "version": "0.1.0",
+  "description": "WASM encryption module for secure-input library",
+  "type": "module",
+  "main": "./pkg/secure_input_wasm.js",
+  "types": "./pkg/secure_input_wasm.d.ts",
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/secure-input.git",
+    "directory": "packages/wasm"
+  },
+  "keywords": [
+    "wasm",
+    "encryption",
+    "chacha20poly1305",
+    "security",
+    "webassembly"
+  ],
+  "files": [
+    "pkg/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "wasm-pack build --target web --out-dir pkg --release",
+    "build:dev": "wasm-pack build --target web --out-dir pkg --dev",
+    "test": "cargo test",
+    "clean": "cargo clean && rm -rf pkg"
+  },
+  "keywords": [
+    "wasm",
+    "encryption",
+    "chacha20",
+    "security"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/secure-input"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "secure-input-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "WASM-powered input obfuscation library for preventing client-side scraping",
+  "scripts": {
+    "build": "pnpm -r --filter \"./packages/*\" --filter \"!./packages/examples\" build",
+    "build:wasm": "pnpm --filter @secure-input/wasm build",
+    "build:core": "pnpm --filter @secure-input/core build",
+    "build:react": "pnpm --filter @secure-input/react build",
+    "dev": "pnpm -r --parallel dev",
+    "test": "pnpm -r test",
+    "clean": "pnpm -r exec rm -rf dist node_modules",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish"
+  },
+  "keywords": [
+    "security",
+    "input",
+    "obfuscation",
+    "wasm",
+    "encryption",
+    "anti-scraping"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^25.0.3",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vitest": "^1.1.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Input - Vanilla JS Demo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container {
+        background: white;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        max-width: 500px;
+        width: 100%;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 28px;
+      }
+
+      .subtitle {
+        color: #666;
+        margin-bottom: 30px;
+        font-size: 14px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+        font-weight: 500;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 16px;
+        border: 2px solid #e5e7eb;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: #667eea;
+      }
+
+      input:disabled {
+        background: #f3f4f6;
+        cursor: not-allowed;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px 24px;
+        background: #667eea;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover:not(:disabled) {
+        background: #5568d3;
+      }
+
+      button:disabled {
+        background: #9ca3af;
+        cursor: not-allowed;
+      }
+
+      .status {
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+
+      .status.info {
+        background: #dbeafe;
+        color: #1e40af;
+      }
+
+      .status.success {
+        background: #d1fae5;
+        color: #065f46;
+      }
+
+      .status.error {
+        background: #fee2e2;
+        color: #991b1b;
+      }
+
+      .result {
+        margin-top: 20px;
+        padding: 16px;
+        background: #f9fafb;
+        border-radius: 8px;
+        border: 1px solid #e5e7eb;
+      }
+
+      .result-label {
+        font-weight: 600;
+        color: #374151;
+        margin-bottom: 8px;
+      }
+
+      .result-value {
+        font-family: "Courier New", monospace;
+        font-size: 12px;
+        color: #6b7280;
+        word-break: break-all;
+        background: white;
+        padding: 8px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔐 Secure Input Demo</h1>
+      <p class="subtitle">Vanilla JavaScript + WASM Encryption</p>
+
+      <div id="status" class="status info">Initializing encryption...</div>
+
+      <form id="coupon-form">
+        <div class="form-group">
+          <label for="coupon">Coupon Code</label>
+          <input
+            type="text"
+            id="coupon"
+            placeholder="Enter your coupon code"
+            disabled
+          />
+        </div>
+
+        <button type="submit" id="submit-btn" disabled>Submit Coupon</button>
+      </form>
+
+      <div id="result" style="display: none" class="result">
+        <div class="result-label">Encrypted Value:</div>
+        <div id="encrypted-value" class="result-value"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
