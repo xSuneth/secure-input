@@ -1,15 +1,16 @@
 {
   "name": "@secure-input/wasm",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "WASM encryption module for secure-input library",
   "type": "module",
   "main": "./pkg/secure_input_wasm.js",
   "types": "./pkg/secure_input_wasm.d.ts",
-  "author": "",
+  "author": "Suneth Chathuranga <sunethchathuranga2017@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/secure-input"
+    "url": "https://github.com/xSuneth/secure-input.git",
+    "directory": "packages/wasm"
   },
   "keywords": [
     "wasm",
