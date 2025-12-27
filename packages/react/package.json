@@ -6,11 +6,11 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "author": "Your Name <your.email@example.com>",
+  "author": "Suneth Chathuranga <sunethchathuranga2017@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/secure-input.git",
+    "url": "https://github.com/xsuneth/secure-input.git",
     "directory": "packages/react"
   },
   "keywords": [
